@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Library</title>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <header>
+    <div id="header">
+      <h1>The Book Shelf</h1>
+      <button id='add'>+ Add a Book</button>
+    </div>
+  </header>
+  <div id="collap" style="display: none;">
+    <div id="form">
+      <input id="title" type="text" placeholder="Enter Title" required>
+      <input id="author" type="text" placeholder="Enter Author" required>
+      <input id="pages" type="number" placeholder="Enter Amount of Pages" required>
+      <label for="read"><b>Read</b></label>
+      <input id="read" type="checkbox">
+      <button id="submit" onclick="addBooktoLibrary()">Submit</button>
+      <button id="clear" onclick="clearFields()">Clear</button>
+    </div>
+  </div>
+  <div id='shelf'></div>
+  <script src='script.js'></script>
+</body>
+</html>
